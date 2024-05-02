@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Teranet-Form</title>
+</head>
+<body>
+  <div class="form">
+    <aside class="header">
+      <a class="logo">TERANET</a> 
+      
+      <nav class="navbar">
+        <a href="#" class="home">Home</a>
+        <a href="https://www.facebook.com/twis2021" target="_blank">About</a>
+      </nav>
+    </aside>
+    
+    <form class="container" action="/form" method="POST" id="myForm" autocomplete="off">
+      <h1>FILL-UP FORM</h1>
+      <div class="inputBox">
+        <h2>Name</h2>
+        <input name="name" id="name" type="text" required="required">
+        <span>Enter your name</span>
+      </div>
+      <div class="inputBox">
+        <h2>Plan</h2>
+        <input name="plan" id="plan" type="text" required="required">
+        <span>Enter your plan</span>
+      </div>
+      <div class="inputBox">
+        <h2>Adress</h2>
+        <input name="address" id="address" type="text" required="required" >
+        <span>Enter your address</span>
+      </div>
+      <div class="inputBox">
+        <h2>Contact Number</h2>
+        <input name="contactNumber" id="contactNumber" type="tel" required >
+        <span>Enter your contact number</span> 
+      </div>
+      <div class="inputBox">
+        <h2>Valid ID</h2>
+        <input name="IDNumber" id="IDNumber" type="text" required="required" >
+        <span>Enter your ID number</span>
+      </div>
+      
+      <button class="btn" type="submit" >Submit</button>
+    </form>
+  </div>
+</body>
+</html>

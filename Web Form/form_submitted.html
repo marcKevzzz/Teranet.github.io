@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: #1D7984;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-msg{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 10%;
+            width: 350px;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .container-msg h1{
+            color: rgb(19, 214, 29);
+            font-size: 2em;
+            text-align: center;
+        }
+        .container-msg p{
+            font-weight: 500;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #continue-btn {
+            margin: 8% 0 5% 0;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            height: 40px;
+            width: 55%;
+            background-color: #1D7984;
+            border-radius: 10px;
+            border: 0;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+        }
+        #continue-btn:hover{
+            background-color: #4dafc0;
+            border: 0;
+        }
+        .container-msg img{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            margin: -13% 0 5% 0;
+        }
+
+        @media only screen and (max-width: 450px) {
+            .container-msg{
+                width: 95vw;
+            }
+            .container-msg img{
+                height: 70px;
+                width: 70px;
+                margin: -10% 0 0 0;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-msg" id="container">
+        <img src="check.png">
+        <h1>Thank You</h1>
+        <p>Form submitted successfully!</p>
+        <button id="continue-btn" >Continue</button>
+    </div>
+    <script>
+        document.getElementById('continue-btn').addEventListener('click', function() {
+            window.location.href = '/'; 
+        });
+
+    </script>
+</body>
+</html> 
