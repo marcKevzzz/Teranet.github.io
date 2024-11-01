@@ -14,7 +14,7 @@ app.get('/form',(req,res) => {
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect('mongodb+srv://kevzz:marckevin@cluster0.95akdf2.mongodb.net/User_Data', {
+    const conn = await mongoose.connect('xxx', {
     });
     console.log('Connected to MongoDB');
   } catch (err) {
